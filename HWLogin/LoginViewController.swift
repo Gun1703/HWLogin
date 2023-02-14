@@ -43,7 +43,7 @@ final class LoginViewController: UIViewController {
         showAlert(withTitle: "Напоминаю:", andMessage: "Ваш пароль 123")
     }
     
-    
+//    MARK: - Other Func
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let wellcomeVC = segue.destination as? WellcomeViewController else {return}
            wellcomeVC.wellcomeText = userName
