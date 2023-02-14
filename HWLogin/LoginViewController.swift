@@ -15,6 +15,9 @@ final class LoginViewController: UIViewController {
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    let userName = "12"
+    let password = "123"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,8 +26,6 @@ final class LoginViewController: UIViewController {
 
 //    MARK: - Tapped Buttons
     @IBAction func logInButtonTapped() {
-        let userName = "12"
-        let password = "123"
         if nameTextField.text == userName &&
             passwordTextField.text == password {
         }
@@ -45,6 +46,7 @@ final class LoginViewController: UIViewController {
     
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let wellcomeVC = segue.destination as? WellcomeViewController else {return}
+           wellcomeVC.wellcomeText = userName
         
     }
     
