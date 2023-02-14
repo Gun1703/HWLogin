@@ -38,7 +38,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log in"/>
                                         <connections>
-                                            <action selector="logInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ql-cg-vnP"/>
+                                            <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCQ-Lt-YHs"/>
                                             <segue destination="AXi-WZ-Yxs" kind="presentation" modalPresentationStyle="fullScreen" id="62C-2K-uKd"/>
                                         </connections>
                                     </button>
@@ -108,8 +108,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="logOutButtonTapped" destination="AXi-WZ-Yxs" eventType="touchUpInside" id="k6d-VC-vaW"/>
-                                    <action selector="logOutButtonTapped:" destination="AXi-WZ-Yxs" eventType="touchUpInside" id="k9Y-Qw-FNk"/>
+                                    <action selector="logOutButtonTapped" destination="AXi-WZ-Yxs" eventType="touchUpInside" id="19G-Vq-Glp"/>
                                     <segue destination="VOK-2i-nex" kind="unwind" unwindAction="unwindFor:" id="Gdz-ez-QGD"/>
                                 </connections>
                             </button>

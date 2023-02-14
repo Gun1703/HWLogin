@@ -30,7 +30,7 @@ final class LoginViewController: UIViewController {
             passwordTextField.text == password {
         }
         else {
-            showAlert(withTitle: "Неправильный логин или пароль", andMessage: "Пожалуйста введите логин и пароль")
+            showAlert(withTitle: "Неправильный логин или пароль", andMessage: "Пожалуйста введите логин и пароль");
             passwordTextField.text = ""
         }
         
