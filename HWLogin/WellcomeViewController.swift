@@ -19,6 +19,5 @@ final class WellcomeViewController: UIViewController {
         wellcomeLabel.text = "Hello," + wellcomeText
     }
   
-        @IBAction func logOutButtonTapped() {
-    }
+
 }

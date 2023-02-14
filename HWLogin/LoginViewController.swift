@@ -23,7 +23,6 @@ final class LoginViewController: UIViewController {
         
         logInButton.layer.cornerRadius = 10
     }
-
 //    MARK: - Tapped Buttons
     @IBAction func logInButtonTapped() {
         if nameTextField.text == userName &&
@@ -33,7 +32,6 @@ final class LoginViewController: UIViewController {
             showAlert(withTitle: "Неправильный логин или пароль", andMessage: "Пожалуйста введите логин и пароль");
             passwordTextField.text = ""
         }
-        
     }
    
     @IBAction func forgotUserNameTapped() {
@@ -44,10 +42,9 @@ final class LoginViewController: UIViewController {
     }
     
 //    MARK: - Other Func
-       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let wellcomeVC = segue.destination as? WellcomeViewController else {return}
-           wellcomeVC.wellcomeText = userName
-        
+        wellcomeVC.wellcomeText = userName
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
