@@ -15,18 +15,28 @@ final class LoginViewController: UIViewController {
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    let userName = "12"
-    let password = "123"
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let wellcomeVC = segue.destination as? WellcomeViewController else {return}
+        wellcomeVC.wellcomeText = gleb.person.name
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.text = gleb.user
+        passwordTextField.text = gleb.password
         
         logInButton.layer.cornerRadius = 10
     }
 //    MARK: - Tapped Buttons
     @IBAction func logInButtonTapped() {
-        if nameTextField.text == userName &&
-            passwordTextField.text == password {
+        if nameTextField.text == gleb.user &&
+            passwordTextField.text == gleb.password {
         }
         else {
             showAlert(withTitle: "Неправильный логин или пароль", andMessage: "Пожалуйста введите логин и пароль");
@@ -42,10 +52,6 @@ final class LoginViewController: UIViewController {
     }
     
 //    MARK: - Other Func
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let wellcomeVC = segue.destination as? WellcomeViewController else {return}
-        wellcomeVC.wellcomeText = userName
-    }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         nameTextField.text = ""
@@ -59,10 +65,5 @@ extension LoginViewController {
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
-    }
-    
-//    MARK: - Keyboard hide
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
     }
 }

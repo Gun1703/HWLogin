@@ -8,16 +8,14 @@
 import UIKit
 
 final class WellcomeViewController: UIViewController {
-
-  
+    
     @IBOutlet var wellcomeLabel: UILabel!
     
-    var wellcomeText: String!
-   
+    var wellcomeText = ""
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        wellcomeLabel.text = "Hello," + wellcomeText
+        wellcomeLabel.text = "Hello, \(wellcomeText)!"
     }
-  
 
 }

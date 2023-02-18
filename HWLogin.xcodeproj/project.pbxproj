@@ -14,6 +14,10 @@
 		BB8385F4299AEED20092053D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8385F3299AEED20092053D /* Assets.xcassets */; };
 		BB8385F7299AEED20092053D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8385F5299AEED20092053D /* LaunchScreen.storyboard */; };
 		BB8385FF299BF7BA0092053D /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8385FE299BF7BA0092053D /* WellcomeViewController.swift */; };
+		BBF804C629A13CA1004C656E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF804C529A13CA1004C656E /* User.swift */; };
+		BBF804C829A1516E004C656E /* IMG_7696.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BBF804C729A1516E004C656E /* IMG_7696.jpeg */; };
+		BBF804CA29A169CA004C656E /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF804C929A169CA004C656E /* AboutMeViewController.swift */; };
+		BBF804CD29A16E49004C656E /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF804CC29A16E49004C656E /* HobbyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		BB8385F6299AEED20092053D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB8385F8299AEED20092053D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB8385FE299BF7BA0092053D /* WellcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomeViewController.swift; sourceTree = "<group>"; };
+		BBF804C529A13CA1004C656E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BBF804C729A1516E004C656E /* IMG_7696.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_7696.jpeg; path = "../../../../../../../var/folders/nb/3440jqjn1ynfft5jcfy6k3c00000gn/T/com.apple.Photos.NSItemProvider/version=1&uuid=11CA712E-18F0-44FD-8BE5-BF3CDC32854F&mode=compatible&noloc=0.jpeg/IMG_7696.jpeg"; sourceTree = "<group>"; };
+		BBF804C929A169CA004C656E /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		BBF804CC29A16E49004C656E /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +69,34 @@
 			children = (
 				BB8385EA299AEECE0092053D /* AppDelegate.swift */,
 				BB8385EC299AEECE0092053D /* SceneDelegate.swift */,
-				BB8385EE299AEECE0092053D /* LoginViewController.swift */,
-				BB8385FE299BF7BA0092053D /* WellcomeViewController.swift */,
+				BBF804CB29A16BED004C656E /* ViewControllers */,
+				BBF804C429A13C7B004C656E /* Models */,
 				BB8385F0299AEECF0092053D /* Main.storyboard */,
+				BBF804C729A1516E004C656E /* IMG_7696.jpeg */,
 				BB8385F3299AEED20092053D /* Assets.xcassets */,
 				BB8385F5299AEED20092053D /* LaunchScreen.storyboard */,
 				BB8385F8299AEED20092053D /* Info.plist */,
 			);
 			path = HWLogin;
+			sourceTree = "<group>";
+		};
+		BBF804C429A13C7B004C656E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBF804C529A13CA1004C656E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BBF804CB29A16BED004C656E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB8385EE299AEECE0092053D /* LoginViewController.swift */,
+				BB8385FE299BF7BA0092053D /* WellcomeViewController.swift */,
+				BBF804C929A169CA004C656E /* AboutMeViewController.swift */,
+				BBF804CC29A16E49004C656E /* HobbyViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8385F7299AEED20092053D /* LaunchScreen.storyboard in Resources */,
+				BBF804C829A1516E004C656E /* IMG_7696.jpeg in Resources */,
 				BB8385F4299AEED20092053D /* Assets.xcassets in Resources */,
 				BB8385F2299AEECF0092053D /* Main.storyboard in Resources */,
 			);
@@ -144,7 +173,10 @@
 			files = (
 				BB8385EF299AEECE0092053D /* LoginViewController.swift in Sources */,
 				BB8385EB299AEECE0092053D /* AppDelegate.swift in Sources */,
+				BBF804CD29A16E49004C656E /* HobbyViewController.swift in Sources */,
 				BB8385FF299BF7BA0092053D /* WellcomeViewController.swift in Sources */,
+				BBF804C629A13CA1004C656E /* User.swift in Sources */,
+				BBF804CA29A169CA004C656E /* AboutMeViewController.swift in Sources */,
 				BB8385ED299AEECE0092053D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
